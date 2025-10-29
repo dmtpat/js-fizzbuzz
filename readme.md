@@ -18,7 +18,7 @@
         - 3° [ if ((i % 3) == 0 ] condizione a verificare una sola delle due condizioni di divisibilità (in questo caso quella del 3) e nel caso sia vera stamperemo il valore "Fizz" altrimenti il valore "Buzz".
 -__Terza versione:__
     - Versione con utilizzo di concatenazione di stringhe:
-        - creazione, ~~fuori dall'iterazione~~, di una variabile di appoggio per il testo da stampare;
+        - creazione, --fuori dall'iterazione--, di una variabile di appoggio per il testo da stampare;
         - azzeramento della variabile d'appoggio [ testo = ""; ] in modo tale che a ogni iterazione non ci sia sovrapposizione di valori;
         - 1° [ if ((i % 3) != 0 && (i % 5) != 0) ] condizione in cui si verifica se entrambe le divisibilità non sono verificate: se non lo sono, condizione VERA, nella variabile d'appoggio viene salvato il valore della i, altrimenti si esce dalla condizione;
         - 2° [ if ((i % 3) == 0 ) ] si verifica se il numero attuale e divisibile per 3 e nel caso sia vero si procede al salvataggio del valore "Fizz" nella variabile d'appoggio, uscendo poi dall'if;

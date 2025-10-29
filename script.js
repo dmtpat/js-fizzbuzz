@@ -18,7 +18,7 @@ for (let i=1; i<= 100; i++) {
         console.log(i);
     }
     */
-   
+   /*
     //v2
     if ((i % 3) == 0 || (i % 5) == 0) { //controllo se almeno una delle due condizioni è vera
         if ((i % 3) == 0 && (i % 5) == 0) { //controllo i casi in cui entrambe sono vere
@@ -31,7 +31,29 @@ for (let i=1; i<= 100; i++) {
     } else {
         console.log(i);// caso in cui nessuna delle due condizioni si verifica
     }
-   
+    */
+    //v3
+    // opzione aggiuntiva con variabile messaggio che si compone e viene stampata alla fine
+    testo = "";
+    if ((i % 3) != 0 && (i % 5) != 0){ 
+        testo = i;
+        //console.log("non divisibile")
+    } else {
+        //testo = "";
+    
+    if ((i % 3) == 0) {
+        
+        testo = "Fizz";
+    }
+    if ((i % 5) == 0) {
+        
+        testo += "Buzz";
+    } 
+    }    
+    
+    
+    console.log(testo);
+    
 
 }
 

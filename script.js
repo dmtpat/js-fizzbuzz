@@ -1,18 +1,38 @@
 // Input
-
+let testo = " ";
 
 //Svolgimento
 
 for (let i=1; i<= 100; i++) {
     
+   /*
+   //v1
+   //versione iniziale in cui si verificano le condizioni ma i due valori vengono scritti in maniera separata
     if ((i % 3) == 0) {
         fTrue = true;
         console.log("Fizz");
     }
-    if ((i%5) == 0) {
+    else if ((i%5) == 0) {
         console.log("Buzz");
+    }else{
+        console.log(i);
     }
-    console.log(i);
+    */
+   
+    //v2
+    if ((i % 3) == 0 || (i % 5) == 0) { //controllo se almeno una delle due condizioni è vera
+        if ((i % 3) == 0 && (i % 5) == 0) { //controllo i casi in cui entrambe sono vere
+            console.log("FizzBuzz");
+        } else if ((i % 3) == 0) {// nel caso non sono entrambe vere controllo se la prima è vera
+           console.log("Fizz"); 
+        } else {
+            console.log("Buzz");// nel caso sia falsa è automaticamente vera l'altra
+        }
+    } else {
+        console.log(i);// caso in cui nessuna delle due condizioni si verifica
+    }
+   
+
 }
 
 //Output
